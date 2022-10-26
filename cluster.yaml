@@ -1,0 +1,23 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: preprod-rabbitmqcluster
+  namespace: dab-core-microservices
+spec:
+  replicas: 1
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: 2
+      memory: 4Gi
+  rabbitmq:
+          additionalConfig: |
+                  log.console.level = info
+                  channel_max = 1700
+                  default_user= rabbitmquser
+                  default_pass = Au614IWqMyTnuqnj82
+                  default_user_tags.administrator = true
+  service:
+    type: ClusterIP

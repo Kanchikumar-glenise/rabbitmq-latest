@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rabbitmq-service-ingress
+  namespace: ingress-nginx
+data:
+  5672: "dab-core-microservices/staging-rabbitmqcluster:5672"
