@@ -887,7 +887,7 @@ spec:
                     type: object
                 type: object
               image:
-                default: 089573694671.dkr.ecr.eu-west-2.amazonaws.com/rabbitmq:latest
+                default: 348748271447.dkr.ecr.eu-west-2.amazonaws.com/rabbitmq:latest
                 description: Image is the name of the RabbitMQ docker image to use
                   for RabbitMQ nodes in the RabbitmqCluster. Must be provided together
                   with ImagePullSecrets in order to use an image in a private registry.
